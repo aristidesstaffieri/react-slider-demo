@@ -9,6 +9,13 @@ class Nav extends Component{
 		)
 	}
 }
+
+const openCloseAnimation = Radium.keyframes({
+  '0%': { width: '20%' },
+  '50%': { width: '100%' },
+  '100%': { width: '20%' }
+})
+
 const styles = {
 	container: {
 		width: '20%',
@@ -19,7 +26,7 @@ const styles = {
 		background: '#272727',
 	},
   transition: {
-    animation: 'OPEN-CLOSE 1s'
+    animation: `${openCloseAnimation} 1s ease-in-out`
   },
 }
 
