@@ -31,5 +31,11 @@ const styles = {
 }
 
 Nav.displayName = 'Navigation'
+Nav.defaultProps = {
+  transitionClass: ''
+}
+Nav.propTypes = {
+  transitionClass: PropTypes.string.isRequired
+}
 
 export default Radium(Nav)

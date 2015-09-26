@@ -28,5 +28,11 @@ const styles = {
 }
 
 Body.displayName = 'Body'
+Body.defaultProps = {
+  clickHandler: ''
+}
+Body.propTypes = {
+  clickHandler: PropTypes.func.isRequired
+}
 
 export default Radium(Body)

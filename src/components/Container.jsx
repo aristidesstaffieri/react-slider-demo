@@ -33,5 +33,6 @@ const styles = {
 		height: '100%',
 	}
 }
+App.displayName = 'App Container'
 
 export default Radium(App)
